@@ -17,6 +17,10 @@
     color: #054cf0;
     font-size: 80px;
   }
+  img {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .timer {
@@ -70,6 +74,11 @@
 #startButton {
   background-color: #175cff;
   color: #fff;
+}
+
+#resetButton:hover {
+  background-color: #e60c0c;
+
 }
 
 #pauseButton,
