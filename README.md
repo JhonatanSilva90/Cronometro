@@ -6,6 +6,10 @@ Projeto desenvolvido com conceitos de HTML, CSS e JavaScript. <br/>
 
 <br>
 
+
+https://github.com/JhonatanSilva90/Cronometro/assets/126831089/b0477390-3060-4896-9c6d-902a0f92b1d5
+
+
 <p align="center">
     <video src="./src/README.mov"></video>
 </p>
