@@ -1,10 +1,93 @@
+// Criando os elementos HTML de forma dinâmica via JavaScript.
+// Criando a div container
+let containerDiv = document.createElement("div");
+containerDiv.classList.add("container");
+
+// Criando o título h1 com a imagem
+let titleH1 = document.createElement("h1");
+let image = document.createElement("img");
+image.src = "./src/cronometro-3.png";
+image.alt = "imagem de um Cronômetro";
+titleH1.appendChild(image);
+titleH1.appendChild(document.createTextNode("Cronômetro"));
+
+// Criando a div timer
+let timerDiv = document.createElement("div");
+timerDiv.classList.add("timer");
+
+// Criando os elementos para exibir o tempo
+let minutesDiv = document.createElement("div");
+minutesDiv.classList.add("time");
+minutesDiv.id = "minutes";
+minutesDiv.textContent = "00";
+
+let separator1 = document.createElement("div");
+separator1.classList.add("separator");
+separator1.textContent = ":";
+
+let secondsDiv = document.createElement("div");
+secondsDiv.classList.add("time");
+secondsDiv.id = "seconds";
+secondsDiv.textContent = "00";
+
+let separator2 = document.createElement("div");
+separator2.classList.add("separator");
+separator2.textContent = ":";
+
+let millisecondsDiv = document.createElement("div");
+millisecondsDiv.classList.add("time");
+millisecondsDiv.id = "milliseconds";
+millisecondsDiv.textContent = "000";
+
+// Adicionando elementos ao div timer
+timerDiv.appendChild(minutesDiv);
+timerDiv.appendChild(separator1);
+timerDiv.appendChild(secondsDiv);
+timerDiv.appendChild(separator2);
+timerDiv.appendChild(millisecondsDiv);
+
+// Criando a div buttons
+let buttonsDiv = document.createElement("div");
+buttonsDiv.classList.add("buttons");
+
+// Criando os botões
+let startButton = document.createElement("button");
+startButton.classList.add("button");
+startButton.id = "startButton";
+startButton.textContent = "Iniciar";
+
+let pauseButton = document.createElement("button");
+pauseButton.classList.add("button");
+pauseButton.id = "pauseButton";
+pauseButton.textContent = "Pausar";
+
+let resumeButton = document.createElement("button");
+resumeButton.classList.add("button");
+resumeButton.id = "resumeButton";
+resumeButton.textContent = "Continuar";
+
+let resetButton = document.createElement("button");
+resetButton.classList.add("button");
+resetButton.id = "resetButton";
+resetButton.textContent = "Resetar";
+
+// Adicionando botões a div buttons
+buttonsDiv.appendChild(startButton);
+buttonsDiv.appendChild(pauseButton);
+buttonsDiv.appendChild(resumeButton);
+buttonsDiv.appendChild(resetButton);
+
+// Adicionando todos os elementos criados a div container
+containerDiv.appendChild(titleH1);
+containerDiv.appendChild(timerDiv);
+containerDiv.appendChild(buttonsDiv);
+
+// Adicionando a div container ao corpo do documento
+document.body.appendChild(containerDiv);
+
 const minutesEl = document.getElementById("minutes");
 const secondsEL = document.getElementById("seconds");
 const millesecondsEl = document.getElementById("milliseconds");
-const startButton = document.getElementById("startButton");
-const pauseButton = document.getElementById("pauseButton");
-const resumeButton = document.getElementById("resumeButton");
-const resetButton = document.getElementById("resetButton");
 
 let interval;
 
