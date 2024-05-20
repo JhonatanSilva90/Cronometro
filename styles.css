@@ -4,6 +4,12 @@
   font-family: "Orbitron", sans-serif;
 }
 
+:root {
+  --cor-white: #ffffff;
+  --cor-yellow: #ffff00;
+  --cor-footer: #2f2e2e;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -11,7 +17,7 @@
   gap: 2rem;
   padding-top: 3rem;
   background-color: #b8b4b4;
-  height: 100vh;
+  height: 88vh;
   justify-content: center;
   h1 {
     color: #054cf0;
@@ -73,15 +79,55 @@
 
 #startButton {
   background-color: #175cff;
-  color: #fff;
+  color: var(--cor-white);
 }
 
 #resetButton:hover {
   background-color: #e60c0c;
-
 }
 
 #pauseButton,
 #resumeButton {
   display: none;
+}
+
+.footer {
+  position: absolute;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center; /* Alinha os itens no centro do eixo Y */
+  width: 100%; /* Para que o footer ocupe todo o eixo X da página */
+  color: var(--cor-white);
+  padding: 20px; /* Tamanho do eixo Y do footer */
+
+  background-color: var(--cor-footer);
+}
+
+.footer span:first-child {
+  color: var(--cor-yellow);
+}
+.footer span:last-child {
+  color: var(--cor-white);
+}
+
+.logo-footer {
+  font-family: "Tektur", sans-serif;
+  font-size: 1rem;
+  background-color: var(--cor-footer);
+}
+
+.footer a {
+  background-color: var(--cor-footer);
+}
+.footer img {
+  background-color: var(--cor-footer);
+}
+.footer p {
+  background-color: var(--cor-footer);
+}
+
+.links-footer {
+  display: flex;
+  background-color: var(--cor-footer);
+  gap: 1rem;
 }
