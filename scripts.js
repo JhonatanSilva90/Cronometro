@@ -6,7 +6,7 @@ containerDiv.classList.add("container");
 // Criando o título h1 com a imagem
 let titleH1 = document.createElement("h1");
 let image = document.createElement("img");
-image.src = "./src/cronometro-3.png";
+image.src = "./images/cronometro-3.png";
 image.alt = "imagem de um Cronômetro";
 titleH1.appendChild(image);
 titleH1.appendChild(document.createTextNode("Cronômetro"));
